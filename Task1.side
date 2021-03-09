@@ -1,0 +1,73 @@
+{
+  "id": "d97d2c53-aa16-4daf-89fb-7eb2cc7ecb6d",
+  "version": "2.0",
+  "name": "Relex",
+  "url": "https://www.relex.ru/",
+  "tests": [{
+    "id": "423e6ce1-0bf2-4490-93fd-3a97a95dd569",
+    "name": "Test",
+    "commands": [{
+      "id": "621fe3ff-c2fc-4816-8c70-e4d23f9c0bb6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.relex.ru/ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4440dfa7-1073-40cf-b53e-cc2014b3e79f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "379495f7-ed83-4e63-98bb-54d83b68e9f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > .nav-link",
+      "targets": [
+        ["css=li:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Карьера')]", "xpath:link"],
+        ["xpath=//ul[@id='horizontal-multilevel-menu']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://job.relex.ru')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fe7af99-237c-421a-b9c5-9a6543b33b0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Узнать больше на сайте РЕЛЭКС",
+      "targets": [
+        ["linkText=Узнать больше на сайте РЕЛЭКС", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Узнать больше на сайте РЕЛЭКС')]", "xpath:link"],
+        ["xpath=//div[@id='workarea']/div[3]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://relex.ru/ru/about-us/')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Узнать больше на сайте РЕЛЭКС')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6652",
+      "windowTimeout": 2000
+    }, {
+      "id": "b7f4d65b-6a39-4f46-892b-478e808a1754",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0b41ff19-36c9-48ae-83f6-b6f2755208d2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["423e6ce1-0bf2-4490-93fd-3a97a95dd569"]
+  }],
+  "urls": ["https://www.relex.ru/"],
+  "plugins": []
+}
